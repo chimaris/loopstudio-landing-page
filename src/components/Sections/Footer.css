@@ -1,0 +1,23 @@
+/* .nav-link {
+	color: white;
+	font-weight: bold;
+} */
+
+@media screen and (min-width: 600px) {
+	.leaderText {
+		position: relative;
+		left: -150px;
+		top: 150px;
+		padding: 30px 55px;
+		height: 300px;
+		font-size: 10px;
+		text-align: left;
+	}
+
+	.creations {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 2rem;
+	}
+}
