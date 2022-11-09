@@ -1,4 +1,4 @@
-import { Box, Heading, VStack, Stack, HStack, Button } from '@chakra-ui/react'
+import { Box, Heading, Stack, Button } from '@chakra-ui/react'
 import React from 'react';
 import deepEarthMobile from '../../assets/mobile/image-deep-earth.jpg'
 import nightArcadeMobile from '../../assets/mobile/image-night-arcade.jpg'
@@ -16,13 +16,14 @@ import fromAboveDesk from '../../assets/desktop/image-from-above.jpg'
 import pocketBorealisDesk from '../../assets/desktop/image-pocket-borealis.jpg'
 import curiosityDesk from '../../assets/desktop/image-curiosity.jpg'
 import fisheyeDesk from '../../assets/desktop/image-fisheye.jpg'
-import './Footer.css';
+
+import './Section.css';
 
 
 
 export const Creation = ({ heading, imgMobile, imgDesk }) => {
     return (
-        <Box backgroundImage={[imgMobile, imgDesk]} backgroundSize='cover' backgroundPosition='center' w='100%' h={['150px', '500px']} pl='10' pt={['20%', '130%']}>
+        <Box backgroundImage={[imgMobile, imgDesk]} backgroundSize='cover' backgroundPosition='center' w='100%' h={['150px', '500px']} my={['10', '0']} pl='10' pt={['20%', '130%']}>
             <Heading textAlign='left' color='white' w='120px' textTransform='uppercase'>{heading}</Heading>
         </Box>
     )
@@ -31,9 +32,9 @@ export const Creation = ({ heading, imgMobile, imgDesk }) => {
 const Creations = () => {
     return (
         <>
-            <Stack direction={['column', 'row']} justifyItems={['center', 'start']} alignItems={['center', 'start']} w='90%' mx='auto' my='25' spacing='70%' position='relative'>
+            <Stack direction={['column', 'row']} justifyItems={['center', 'start']} alignItems={['center', 'start']} w='90%' mx='auto' my='25px' spacing='64%' position='relative'>
                 <Heading fontSize={40} fontWeight='thin'>OUR CREATIONS</Heading>
-                <Button position={['absolute', 'unset']} top={['1500px', 'unset']} size={['lg', 'lg', 'md']}> SEE ALL</Button>
+                <Button position={['absolute', 'unset']} top={['1250px', 'unset']} w={['200px', '150px']} p={8} border='2px solid black' background='transparent' fontWeight={900} fontSize='16px'> SEE ALL</Button>
             </Stack>
             <Box w='90%' mx='auto' className='creations'>
                 <Creation heading='Deep earth' imgMobile={deepEarthMobile} imgDesk={deepEarthDesk} />

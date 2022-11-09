@@ -21,15 +21,15 @@ Users should be able to:
 
 ## Live Site URL
 
-https://marisapp.netlify.app/
+https://loopstudio-landing-page-tan.vercel.app/
 
-### What I learned
+## What I learned
 
 I learnt React (components, props and JSX) and CSS Framework called Chakra UI while working through this project.
 
 ## Acknowledgments
 
-All thanks to Techathon for giving me this wonderful opportunity to learn React js.
+All thanks to [Techathon Community](https://t.co/J591uyytCr) for giving me this wonderful opportunity to learn React js.
 
 ## Available Scripts
 

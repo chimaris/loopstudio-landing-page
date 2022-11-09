@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Stack, Image } from '@chakra-ui/react'
-import NavBar from './NavBar';
+import Nav from './Nav';
 import HeaderText from './HeaderText';
 import bgImageMobile from '../../assets/mobile/image-hero.jpg'
 import bgImageDesk from '../../assets/desktop/image-hero.jpg'
@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <Box sx={headerStyle}  >
-            <NavBar />
+            <Nav />
             <HeaderText />
         </Box>
     )

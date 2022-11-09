@@ -6,12 +6,12 @@ import twitter from '../../assets/icon-twitter.svg'
 import instagram from '../../assets/icon-instagram.svg'
 import pinterest from '../../assets/icon-pinterest.svg'
 
-import './Footer.css';
+import './Section.css';
 
 
 const Footer = () => {
     return (
-        <Stack direction={['column', 'row']} bgColor='black' mt='20' spacing='20px' py={20} px={['100px', '200px']} color='white'>
+        <Stack direction={['column', 'row']} bgColor='black' mt='40' spacing='20px' py={20} px={['100px', '200px']} color='white'>
             <VStack spacing={5} alignItems={['center', 'start']}>
                 <Image src={logo} alt='loopstudio logo' />
                 <Stack direction={['column', 'row']} spacing='10px'>

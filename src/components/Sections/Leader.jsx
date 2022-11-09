@@ -2,6 +2,9 @@ import { VStack, Image, Text, Heading, Stack } from '@chakra-ui/react';
 import React from 'react';
 import interactive from '../../assets/mobile/image-interactive.jpg'
 
+import './Section.css';
+
+
 const inFoStyle = {
     w: '90%',
     mx: 'auto',
