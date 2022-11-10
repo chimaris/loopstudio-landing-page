@@ -1,4 +1,4 @@
-import { HStack, IconButton, Stack, Image, VStack, Text, Spacer } from '@chakra-ui/react'
+import { HStack, Stack, Image, VStack, Text, Spacer, Box } from '@chakra-ui/react'
 import React from 'react'
 import logo from '../../assets/logo.svg'
 import fb from '../../assets/icon-facebook.svg'
@@ -11,29 +11,31 @@ import './Section.css';
 
 const Footer = () => {
     return (
-        <Stack direction={['column', 'row']} bgColor='black' mt='40' spacing='20px' py={20} px={['100px', '200px']} color='white'>
-            <VStack spacing={5} alignItems={['center', 'start']}>
-                <Image src={logo} alt='loopstudio logo' />
-                <Stack direction={['column', 'row']} spacing='10px'>
-                    <a href="#" className="nav-link">About</a>
-                    <a href="#" className="nav-link">Careers</a>
-                    <a href="#" className="nav-link">Events</a>
-                    <a href="#" className="nav-link">Products</a>
-                    <a href="#" className="nav-link">Support</a>
-                </Stack>
-            </VStack>
-            <Spacer />
-            <VStack spacing={5} alignItems={['center', 'end']}>
-                <HStack spacing={5}>
-                    <IconButton icon={fb} color='#000' />
-                    <IconButton icon={twitter} variant='outline' />
-                    <IconButton icon={instagram} variant='outline' />
-                    <IconButton icon={pinterest} variant='outline' />
-                </HStack>
-                <Text>Support © 2021 Loopstudios. All rights reserved.</Text>
-            </VStack>
+        <Box bgColor='black' w='100%' mt='40' mx='auto' p={20}>
+            <Stack direction={['column', 'column', 'row']} spacing='20px' color='white'>
+                <VStack spacing={5} alignItems={['center', 'center', 'start']}>
+                    <Image src={logo} alt='loopstudio logo' />
+                    <Stack direction={['column', 'column', 'row']} spacing='10px'>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#" >Events</a>
+                        <a href="#" >Products</a>
+                        <a href="#" >Support</a>
+                    </Stack>
+                </VStack>
+                <Spacer />
+                <VStack spacing={5} alignItems={['center', 'center', 'end']}>
+                    <HStack spacing={5}>
+                        <button> <img src={fb} alt="facebook icon" /> </button>
+                        <button> <img src={twitter} alt="twitter icon" /> </button>
+                        <button> <img src={instagram} alt="instagram icon" /> </button>
+                        <button> <img src={pinterest} alt="pinterest icon" /> </button>
+                    </HStack>
+                    <Text>Support © 2021 Loopstudios. All rights reserved.</Text>
+                </VStack>
 
-        </Stack>
+            </Stack>
+        </Box>
     )
 }
 

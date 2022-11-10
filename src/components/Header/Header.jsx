@@ -1,12 +1,12 @@
 import React from 'react'
-import { Box, Stack, Image } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import Nav from './Nav';
 import HeaderText from './HeaderText';
 import bgImageMobile from '../../assets/mobile/image-hero.jpg'
 import bgImageDesk from '../../assets/desktop/image-hero.jpg'
 
 const headerStyle = {
-    backgroundImage: [bgImageMobile, bgImageDesk],
+    backgroundImage: [bgImageMobile, bgImageMobile, bgImageDesk],
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
