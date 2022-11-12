@@ -43,3 +43,7 @@
 		top: 75px;
 	}
 }
+
+.footerLinks a {
+	font-size: 2rem;
+}

@@ -15,8 +15,8 @@ const Footer = () => {
             <Stack direction={['column', 'column', 'row']} spacing='20px' color='white'>
                 <VStack spacing={5} alignItems={['center', 'center', 'start']}>
                     <Image src={logo} alt='loopstudio logo' />
-                    <Stack direction={['column', 'column', 'row']} spacing='10px'>
-                        <a href="#">About</a>
+                    <Stack direction={['column', 'column', 'row']} spacing='10px' className='footerLinks'>
+                        <a href="#" >About</a>
                         <a href="#">Careers</a>
                         <a href="#" >Events</a>
                         <a href="#" >Products</a>
@@ -31,11 +31,11 @@ const Footer = () => {
                         <button> <img src={instagram} alt="instagram icon" /> </button>
                         <button> <img src={pinterest} alt="pinterest icon" /> </button>
                     </HStack>
-                    <Text>Support © 2021 Loopstudios. All rights reserved.</Text>
+                    <Text fontSize='2rem'>Support © 2021 Loopstudios. All rights reserved.</Text>
                 </VStack>
 
-            </Stack>
-        </Box>
+            </Stack >
+        </Box >
     )
 }
 

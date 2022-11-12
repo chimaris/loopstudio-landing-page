@@ -12,7 +12,7 @@ const Nav = () => {
 
     return (
         <nav className="navigation">
-            <Image src={logo} alt='loopstudio logo' w={['40%', '40%', '30%']} h={['70%', '70%', '100%']} />
+            <Image src={logo} alt='loopstudio logo' />
 
             <button className="hamburger" onClick={toggleHandler}>
                 <img src={toggle ? closeIcon : hamburgerIcon} alt="hamburger icon" />
