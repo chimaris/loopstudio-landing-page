@@ -1,17 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Image } from '@chakra-ui/react'
 import logo from '../../assets/logo.svg'
 import hamburgerIcon from '../../assets/icon-hamburger.svg'
 import closeIcon from '../../assets/icon-close.svg'
 import './Header.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Nav = () => {
     const [toggle, setToggle] = useState(false);
 
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     const toggleHandler = () => setToggle(!toggle);
 
     return (
-        <nav className="navigation">
+        <nav className="navigation" data-aos="fade-in" once='true' data-aos-duration="2000">
             <Image src={logo} alt='loopstudio logo' />
 
             <button className="hamburger" onClick={toggleHandler}>

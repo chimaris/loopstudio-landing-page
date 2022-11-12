@@ -37,7 +37,7 @@ const Creations = () => {
                 <Spacer />
                 <Button position={['absolute', 'absolute', 'unset']} top={['1470px', '1470px', 'unset']} w={['200px', '150px']} p={8} border='2px solid black' background='transparent' fontWeight={900} fontSize='16px'> SEE ALL</Button>
             </Stack>
-            <Box w='90%' mx='auto' className='creations'>
+            <Box w='90%' mx='auto' className='creations' data-aos="fade-up" once='true' data-aos-duration="1000">
                 <Creation text='Deep earth' imgMobile={deepEarthMobile} imgDesk={deepEarthDesk} />
                 <Creation text='Night arcade' imgMobile={nightArcadeMobile} imgDesk={nightArcadeDesk} />
                 <Creation text='Soccer team VR' imgMobile={soccerTeamMobile} imgDesk={soccerTeamDesk} />

@@ -25,8 +25,8 @@ const textStyle = {
 const Leader = () => {
     return (
         <Stack sx={inFoStyle} direction={['column', 'column', 'column', 'row']} >
-            <Image src={interactive} className='leaderImage' />
-            <VStack sx={leaderStyle} className='leaderText'>
+            <Image src={interactive} className='leaderImage' data-aos="fade-right" once='true' data-aos-duration="1000" />
+            <VStack sx={leaderStyle} className='leaderText' data-aos="fade-left" once='true' data-aos-duration="1000">
                 <Heading py={10} size={['4xl', '3xl']} textTransform='uppercase' fontWeight='normal'>The leader in interactive VR</Heading>
                 <Text sx={textStyle}>Founded in 2011, Loopstudios has been producing world-class virtual reality
                     projects for some of the best companies around the globe. Our award-winning

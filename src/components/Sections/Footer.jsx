@@ -31,7 +31,7 @@ const Footer = () => {
                         <button> <img src={instagram} alt="instagram icon" /> </button>
                         <button> <img src={pinterest} alt="pinterest icon" /> </button>
                     </HStack>
-                    <Text fontSize='2rem'>Support © 2021 Loopstudios. All rights reserved.</Text>
+                    <Text fontSize={['1.5rem', '2rem']}>Support © 2021 Loopstudios. All rights reserved.</Text>
                 </VStack>
 
             </Stack >
